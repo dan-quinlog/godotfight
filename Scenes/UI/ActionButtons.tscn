@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm7x428h04d3j"]
+
+[ext_resource type="Script" path="res://Scripts/UI/ActionButtons.gd" id="1_i7r2a"]
+
+[node name="ActionButtons" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_i7r2a")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -20.0
+offset_right = 150.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="AttackButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Attack"
+
+[node name="BlockButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Block"
+
+[node name="ThrowButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Throw"
+
+[connection signal="pressed" from="HBoxContainer/AttackButton" to="." method="_on_attack_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/BlockButton" to="." method="_on_block_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/ThrowButton" to="." method="_on_throw_button_pressed"]

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmf2nkw8v75k4"]
+
+[ext_resource type="Script" path="res://Scripts/Announcements/EnemySuperAnnouncement.gd" id="1_d28s7"]
+
+[node name="EnemySuperAnnouncement" type="Label"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -50.0
+offset_right = 250.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "ENEMY SUPER!"
+horizontal_alignment = 1
+vertical_alignment = 1
+font_size = 64
+font_color = Color(1, 0, 0, 1)
+script = ExtResource("1_d28s7")
