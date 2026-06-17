@@ -51,12 +51,12 @@ func setup_battle_scene():
 
     # Instance Move Announcements (initially hidden)
     player_move_announcement_node = move_announcement_scene.instantiate()
-    player_move_announcement_node.position = Vector2(player_node.position.x, player_node.position.y - 150)
+    player_move_announcement_node.position = Vector2(player_node.position.x, player_node.position.y - 200)
     add_child(player_move_announcement_node)
     player_move_announcement_node.hide()
 
     opponent_move_announcement_node = move_announcement_scene.instantiate()
-    opponent_move_announcement_node.position = Vector2(opponent_node.position.x, opponent_node.position.y - 150)
+    opponent_move_announcement_node.position = Vector2(get_viewport_rect().size.x / 2, opponent_node.position.y - 200) # Centered for opponent
     add_child(opponent_move_announcement_node)
     opponent_move_announcement_node.hide()
 

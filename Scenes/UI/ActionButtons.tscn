@@ -14,25 +14,35 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -20.0
-offset_right = 150.0
-offset_bottom = 20.0
+offset_left = -300.0
+offset_top = -40.0
+offset_right = 300.0
+offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+theme_override_constants/separation = 50
 
 [node name="AttackButton" type="Button" parent="HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "Attack"
+font_size = 32
 
 [node name="BlockButton" type="Button" parent="HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "Block"
+font_size = 32
 
 [node name="ThrowButton" type="Button" parent="HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 text = "Throw"
+font_size = 32
 
 [connection signal="pressed" from="HBoxContainer/AttackButton" to="." method="_on_attack_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/BlockButton" to="." method="_on_block_button_pressed"]

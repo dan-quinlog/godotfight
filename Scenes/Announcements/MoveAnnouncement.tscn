@@ -17,4 +17,5 @@ grow_vertical = 2
 text = "MOVE"
 horizontal_alignment = 1
 vertical_alignment = 1
+font_size = 64
 script = ExtResource("1_d28s7")

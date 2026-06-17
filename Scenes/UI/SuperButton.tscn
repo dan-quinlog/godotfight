@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmf2nkw8v75k7"]
+
+[ext_resource type="Script" path="res://Scripts/UI/SuperButton.gd" id="1_v788n"]
+
+[node name="SuperButton" type="Button"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -25.0
+offset_right = 150.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SUPER!"
+font_size = 48
+script = ExtResource("1_v788n")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
